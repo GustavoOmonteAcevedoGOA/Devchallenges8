@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-master",
+  "version": "1.0.0",
+  "description": "my portfolio where I show experience as a web developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoOmonteAcevedoGOA/Devchallenges8.git"
+  },
+  "keywords": [
+    "Gustavo",
+    "Omonte",
+    "Acevedo;",
+    "Portfolio;"
+  ],
+  "author": "Gustavo Omonte Acevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoOmonteAcevedoGOA/Devchallenges8/issues"
+  },
+  "homepage": "https://github.com/GustavoOmonteAcevedoGOA/Devchallenges8#readme"
+}
