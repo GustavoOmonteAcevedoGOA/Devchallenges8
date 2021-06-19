@@ -1,0 +1,6 @@
+.boton-azul{
+    @include boton($azul,$blanco,block);
+}
+.boton-blanco{
+    @include boton($blanco,$azul,block)
+}

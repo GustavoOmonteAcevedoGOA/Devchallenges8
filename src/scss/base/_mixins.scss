@@ -1,0 +1,37 @@
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: #{$telefono}){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: #{$laptop}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin boton($bgColor,$color,$display){
+    background-color: $bgColor;
+    color: $color;
+    font-weight: $medium;
+    text-decoration: none;
+    padding: 1.2rem 3.9rem;
+    text-align: center;
+    display: $display;
+    border: none;
+    &:hover {
+        background-color: darken($bgColor,5);
+        cursor: pointer;
+    }
+
+}
