@@ -1,18 +1,37 @@
 .flex {
   padding: 0.5rem 2%;
   @include tablet {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+  @include laptop {
+    grid-template-columns: 1.5fr 3fr;
+    gap: 3.2rem;
+
     padding: 7.1rem 6.6rem;
   }
 
   .left {
-    flex: 0 0 100%;
+    max-width: 40rem;
+    margin-right: auto;
+    margin-left: auto;
     @include tablet {
-      flex: 0 0 410px;
+      margin-right: unset;
+      margin-left: unset;
+      max-width: 41.3rem;
     }
   }
   .right {
-    flex: 0 0 1fr;
+    max-width: 40rem;
+    margin-right: auto;
+    margin-left: auto;
+    @include tablet {
+      margin-top: $separacion;
+      margin-right: unset;
+      margin-left: unset;
+      max-width: unset;
+    }
   }
 }
 .portfolio-perfil {

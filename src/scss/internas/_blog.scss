@@ -2,6 +2,17 @@
     .card{
         display: flex;
         flex-direction: column-reverse;
+        @include desktop-grid{            
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 7.5rem;
+            
+        }
+        &:not(:first-of-type){
+            @include desktop-grid{
+               padding-top: 3.4rem; 
+            }
+        }
     }
 }
 
@@ -18,12 +29,14 @@
               margin-bottom: 2rem;
               color: $plomo;
           }
+          
     }
     a{
         color: $azul;
     }
     h2{
         margin-bottom: 2.6rem;
+        width: 60%;
     }
 }
 

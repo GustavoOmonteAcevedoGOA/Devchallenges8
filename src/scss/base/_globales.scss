@@ -23,8 +23,11 @@ p {
 }
 .container {
   width: 95%;
-  max-width: 130.6rem;
+  max-width: 144rem;
   margin: 0 auto;
+  @include tablet{
+      width: 100%;
+  }  
 }
 a {
   text-decoration: none;
@@ -33,7 +36,7 @@ a {
   padding: 1.7rem 2.2rem;
   background-color: $blanco;
   border-radius: 1.2rem;
-  margin-bottom: $separacion;
+  margin-bottom: $separacion;  
   &.card-title {
     margin-bottom: 1.6rem;
   }
