@@ -1,0 +1,33 @@
+.experiences {
+  h2 {
+    margin-bottom: 4.4rem;
+  }
+  .card {
+    
+    .companies {
+      display: grid;
+      grid-template-columns: 22% 1fr;
+      gap: 1.6rem;
+      margin-bottom: 3.6rem;
+      .company{
+          margin-top: 1.5rem;
+      }
+      .company-info {
+        h5 {
+          margin-bottom: 1.2rem;
+        }
+        h4 {
+          margin-bottom: 3.3rem;
+        }
+        p {
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: $medium;
+          line-height: 2rem;
+          letter-spacing: 0rem;
+          color: $plomo;
+        }
+      }
+    }
+  }
+}

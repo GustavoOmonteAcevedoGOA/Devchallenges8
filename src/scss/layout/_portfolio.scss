@@ -1,3 +1,65 @@
-.flex{
+.flex {
+  padding: 0.5rem 2%;
+  @include tablet {
     display: flex;
+    padding: 7.1rem 6.6rem;
+  }
+
+  .left {
+    flex: 0 0 100%;
+    @include tablet {
+      flex: 0 0 410px;
+    }
+  }
+  .right {
+    flex: 0 0 1fr;
+  }
+}
+.portfolio-perfil {
+  margin-top: $separacion;
+  .card {
+    h1 {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0em;
+      font-weight: $semiBold;
+      color: $gris;
+      margin-top: 2.4rem;
+      margin-bottom: 0.627rem;
+    }
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: 22px;
+      letter-spacing: 0em;
+      margin-bottom: 3.4rem;
+    }
+    .links {
+      margin-bottom: 3.5rem;
+      p {
+        color: $gris;
+        margin-bottom: 1rem;
+        padding-left: 3.8rem;
+        position: relative;
+        overflow-wrap: break-word;
+        &:nth-of-type(1)::before {
+          content: "email";
+        }
+        &:nth-of-type(2)::before {
+          content: "phone";
+        }
+      }
+    }
+  }
+}
+
+label label[for="email"]::before {
+  content: "email";
+}
+label[for="phone"]::before {
+  content: "phone";
+}
+label[for="name"]::before {
+  content: "account_circle";
 }

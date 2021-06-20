@@ -7,28 +7,109 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body{
-    font-family: $fuente_principal;
-    font-size: 1.8rem;
-    font-weight: $medium;
-    line-height: 2.194rem;
-    background-color: $bodyBackground;
+body {
+  font-family: $fuente_principal;
+  font-size: 1.8rem;
+  font-weight: $medium;
+  line-height: 2.194rem;
+  background-color: $bodyBackground;
 }
-p{
-    color: $plomo;
-    font-size: 1.6rem;
-    font-weight: $medium;
-    line-height: 1.95rem;
+p {
+  color: $plomo;
+  font-size: 1.6rem;
+  font-weight: $medium;
+  line-height: 1.95rem;
+  margin: 0 0;
 }
-.container{
-    width: 95%;
-    max-width: 130.6rem;
-    margin: 0 auto;
+.container {
+  width: 95%;
+  max-width: 130.6rem;
+  margin: 0 auto;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-img,picture{
-    width: 100%;
-    display: block;
+.card {
+  padding: 1.7rem 2.2rem;
+  background-color: $blanco;
+  border-radius: 1.2rem;
+  margin-bottom: $separacion;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+  border-radius: 1.2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+h2 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: $medium;
+  line-height: 2.9rem;
+  letter-spacing: 0em;
+  color: $gris;
+}
+h3 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: $semiBold;
+  line-height: 2.2rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: $grisOscuro;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: $semiBold;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: $grisOscuro;
+}
+h5 {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: $medium;
+  line-height: 1.7rem;
+  letter-spacing: 0em;
+  color: $plomo;
+}
+.icon::before {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: $gris;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
