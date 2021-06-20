@@ -1,6 +1,6 @@
 .boton-azul{
-    @include boton($azul,$blanco,block);
+    @include boton($azul,$blanco,inline-block);
 }
 .boton-blanco{
-    @include boton($blanco,$azul,block)
+    @include boton($blanco,$azul,inline-block)
 }

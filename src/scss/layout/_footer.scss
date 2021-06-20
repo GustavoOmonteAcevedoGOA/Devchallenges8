@@ -1,0 +1,28 @@
+footer {
+  padding-bottom: 2.4rem;
+  padding-top: 4.6rem;
+  @include tablet {
+    padding-top: 10rem;
+  }
+  @include laptop {
+    padding-top: 1rem;
+  }
+  p {
+    font-style: normal;
+    font-weight: $medium;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $plomo;
+    span {
+      font-weight: $bold;
+      text-decoration: underline;
+      a,
+      a:visited {
+        color: $plomo;
+      }
+    }
+  }
+}
+
